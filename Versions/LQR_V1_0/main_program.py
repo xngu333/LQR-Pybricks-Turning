@@ -1,26 +1,28 @@
 """
-Example program skeleton for LQR-Pybricks-Turning.
-
-This file is intentionally left blank enough for you to fill in
-with your own robot mission logic and LQR control calls.
+Example program using LQR turning control.
 """
 
-# TODO: import your library
-# from lqr_v1_0 import *
+from lqr_v1_0 import DC_XoayLQR, hub, motorL, motorR
 
-async def my_mission():
+def main():
     """
-    Replace this with your robot mission.
-    Example:
-    - initialize odometry
-    - call LQR turn functions
-    - move to target coordinates
-    - execute a turning sequence
+    Example mission demonstrating LQR turn function.
     """
-    pass
+    # Initialize IMU
+    hub.imu.reset_heading(0)
+    
+    # Example turns
+    print("Turning 90 degrees...")
+    DC_XoayLQR(50, 90)
+    
+    print("Turning 180 degrees...")
+    DC_XoayLQR(50, 180)
+    
+    print("Turning -90 degrees...")
+    DC_XoayLQR(50, -90)
+    
+    print("Mission complete!")
 
 
 if __name__ == "__main__":
-    # TODO: run your mission
-    # run_task(my_mission())
-    pass
+    main()
