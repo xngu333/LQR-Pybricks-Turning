@@ -90,26 +90,4 @@ This project is designed around a state-space feedback controller. In a typical 
 
 The controller aims to minimize deviations from the desired motion while keeping the system stable and responsive.
 
-## Development suggestions
-
-- Add a `requirements.txt` for project dependencies
-- Organize robot logic into modules such as `control.py`, `motion.py`, and `robot.py`
-- Document tuning parameters for LQR matrices and gains
-- Add tests for turning angle accuracy and stability
-
-## License
-
-This project does not currently include a license file. If you plan to share or distribute the project publicly, consider adding an appropriate open-source license such as MIT or Apache 2.0.
-
-## Contributing
-
-Contributions are welcome. If you want to expand this project:
-
-- improve the robot motion model
-- tune the controller gains
-- add more autonomous movement routines
-- improve documentation and examples
-
-## Contact
-
-For questions or collaboration, use the repository's GitHub issue tracker or contact the project owner through the repository page.
+* Please tune your own LQR Control values to achieve the best stability!
